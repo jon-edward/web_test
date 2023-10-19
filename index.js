@@ -1,6 +1,12 @@
 document.body.onload = attachEmbed;
 
 function attachEmbed() {
-  const embed = document.createElement("embed", { type: "image/jpg", src: "test.jpg", width: 300, height: 200 });
+  const embed = document.createElement("embed");
+  
+  embed.setAttribute("type", "image/jpg");
+  embed.setAttribute("src", "test.jpg");
+  embed.setAttribute("width", 300);
+  embed.setAttribute("height", 200);
+  
   document.body.appendChild(embed);
 }
