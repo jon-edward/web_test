@@ -7,6 +7,6 @@ function attachEmbed() {
   embed.setAttribute("src", "test.jpg");
   embed.setAttribute("width", 300);
   embed.setAttribute("height", 200);
-  
-  document.body.appendChild(embed);
+
+  document.getElementsByTagName('head')[0].appendChild(embed);
 }
